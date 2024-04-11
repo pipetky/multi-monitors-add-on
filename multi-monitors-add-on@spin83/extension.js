@@ -21,16 +21,17 @@ const Main = imports.ui.main;
 var { ANIMATION_TIME } = imports.ui.overview;
 
 const Config = imports.misc.config;
-const GNOME_SHELL_VERSION = Config.PACKAGE_VERSION.split('.');
+
 
 const ExtensionUtils = imports.misc.extensionUtils;
-const MultiMonitors = ExtensionUtils.getCurrentExtension();
+
 const Convenience = MultiMonitors.imports.convenience;
 
 const MMLayout = MultiMonitors.imports.mmlayout;
 const MMOverview = MultiMonitors.imports.mmoverview;
 const MMIndicator = MultiMonitors.imports.indicator;
-
+const GNOME_SHELL_VERSION = Config.PACKAGE_VERSION.split('.');
+const MultiMonitors = ExtensionUtils.getCurrentExtension();
 const OVERRIDE_SCHEMA = 'org.gnome.shell.overrides';
 const MUTTER_SCHEMA = 'org.gnome.mutter';
 const WORKSPACES_ONLY_ON_PRIMARY_ID = 'workspaces-only-on-primary';
