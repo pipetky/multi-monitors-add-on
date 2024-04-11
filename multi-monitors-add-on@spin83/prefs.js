@@ -22,13 +22,14 @@ const Gdk = imports.gi.Gdk;
 const Gtk = imports.gi.Gtk;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
-
+const Convenience = MultiMonitors.imports.convenience;
 const Gettext = imports.gettext.domain('multi-monitors-add-on');
+const ExtensionUtils = imports.misc.extensionUtils;
 const _ = Gettext.gettext;
 
-const ExtensionUtils = imports.misc.extensionUtils;
+
 const MultiMonitors = ExtensionUtils.getCurrentExtension();
-const Convenience = MultiMonitors.imports.convenience;
+
 
 const SHOW_INDICATOR_ID = 'show-indicator';
 const SHOW_PANEL_ID = 'show-panel';
