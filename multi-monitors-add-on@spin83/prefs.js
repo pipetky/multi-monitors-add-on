@@ -14,7 +14,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, visit https://www.gnu.org/licenses/.
 */
-
+const Convenience = MultiMonitors.imports.convenience;
 const Lang = imports.lang;
 
 const GObject = imports.gi.GObject;
@@ -22,7 +22,7 @@ const Gdk = imports.gi.Gdk;
 const Gtk = imports.gi.Gtk;
 const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
-const Convenience = MultiMonitors.imports.convenience;
+
 const Gettext = imports.gettext.domain('multi-monitors-add-on');
 const ExtensionUtils = imports.misc.extensionUtils;
 const _ = Gettext.gettext;
